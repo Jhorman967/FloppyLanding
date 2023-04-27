@@ -1,0 +1,32 @@
+.seccion {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f2f2f2;
+    color: black;
+  }
+  
+  .imagen {
+    max-width: 30%;
+    height: auto;
+    margin-right: 50px;
+    border-radius: 5px;
+  }
+  
+  .texto {
+    max-width: 600px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  

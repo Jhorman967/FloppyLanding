@@ -1,0 +1,100 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Estilos para el logotipo */
+.navbar__logo {
+  width: 10rem;
+}
+
+/* Estilos para la lista de menú */
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar__item {
+  margin: 0.5rem 1rem;
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Estilos para el icono de hamburguesa */
+.navbar__hamburger {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.navbar__hamburger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: 0.4s;
+}
+
+/* Estilos para el menú responsive */
+@media screen and (max-width: 768px) {
+  .navbar{
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .navbar__container-logo-menu{
+    display: flex;
+    flex-direction: row;
+  }
+  .navbar__menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__menu {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    background-color: #333;
+    
+  }
+
+  .navbar__item {
+    margin: 1rem 0;
+  }
+
+  .navbar__link {
+    color: #fff;
+  }
+
+  .navbar__hamburger {
+    display: block;
+  }
+
+  .navbar__brand{
+    align-self: center;
+  }
+  .navbar__logo {
+    width: 5rem;
+    
+  }
+
+}
+
+/* Estilos para mostrar/ocultar el menú en dispositivos móviles */
+.navbar__menu--show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

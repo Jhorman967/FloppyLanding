@@ -1,0 +1,37 @@
+footer {
+
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .redes-sociales {
+    margin-bottom: 0.5rem;
+  }
+  
+  .redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+  }
+  
+  .redes-sociales a:hover {
+    transform: translateY(-5px);
+  }
+  
+  @media screen and (min-width: 768px) {
+    footer {
+      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .redes-sociales {
+      margin-bottom: 0;
+    }
+  }
+  
